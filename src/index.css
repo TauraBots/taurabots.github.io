@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&family=Rajdhani:wght@600;700&family=Teko:wght@500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #fcfcfc;
+    color: #0a0a0a;
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+.font-display {
+  font-family: 'Teko', sans-serif;
+}
+
+.font-tech {
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.font-sans {
+  font-family: 'Inter', sans-serif;
+}
+
+.bg-pattern {
+  background-image: radial-gradient(#888888 1px, transparent 1px);
+  background-size: 24px 24px;
+  background-position: -12px -12px;
+}
+
+.text-outline {
+  color: transparent;
+  -webkit-text-stroke: 1px #0a0a0a;
+}
+
+.group:hover .group-hover\:text-outline-none {
+  -webkit-text-stroke: 0;
+  color: #fcfcfc;
+}
+
+.highlight-text {
+  background-color: #e5e5e5;
+  display: inline-block;
+  padding: 0 0.25rem;
+}
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fcfcfc;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1a1a1a;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 15s linear infinite;
+}
