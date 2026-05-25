@@ -37,12 +37,12 @@ export default function Talents() {
             cadastre-se no nosso banco de talentos.
           </p>
           <a
-            href="https://taurabots.cloud"
+            href="https://forms.gle/p2TehafTePcjLoBr8"
             target="_blank"
             rel="noopener noreferrer"
             className="group inline-flex items-center gap-4 bg-[#fcfcfc] px-8 py-4 font-tech font-bold uppercase tracking-widest text-[#0a0a0a] transition-all duration-300 hover:-translate-y-1 hover:scale-105 hover:shadow-[0_10px_20px_rgba(255,255,255,0.1)]"
           >
-            Acesse taurabots.cloud
+            Acesse FORMS
             <ExternalLink className="h-5 w-5 transition-transform group-hover:translate-x-1" />
           </a>
         </Reveal>
