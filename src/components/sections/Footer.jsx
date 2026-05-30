@@ -1,4 +1,4 @@
-import { Facebook, Github, Instagram, Mail } from 'lucide-react';
+import { Facebook, Github, Instagram, Linkedin, Mail } from 'lucide-react';
 import { useLanguage } from '../../i18n';
 
 export default function Footer() {
@@ -42,6 +42,15 @@ export default function Footer() {
               aria-label="GitHub"
             >
               <Github className="h-6 w-6" />
+            </a>
+            <a
+              href="https://br.linkedin.com/company/taurabots"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex h-12 w-12 items-center justify-center rounded-full bg-[#0a0a0a] text-[#fcfcfc] transition-transform hover:-translate-y-2"
+              aria-label="LinkedIn"
+            >
+              <Linkedin className="h-6 w-6" />
             </a>
             <a
               href="mailto:taurabots@ufsm.br"

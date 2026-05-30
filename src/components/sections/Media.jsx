@@ -23,7 +23,7 @@ const videos = [
 
 const articles = [
   {
-    title: 'Taura Bots vence competição internacional de arco e flecha no Taiwan',
+    title: 'Taura Bots vence competição internacional de arco e flecha em Taiwan',
     source: 'UFSM CT',
     date: '04/09/2018',
     priority: true,
@@ -37,10 +37,65 @@ const articles = [
     url: 'https://www.ufsm.br/unidades-universitarias/ct/2019/04/10/integrante-do-taura-bots-conquista-o-primeiro-lugar-em-competicao-no-ira',
   },
   {
-    title: 'Equipe Taura Bots conquista 3º lugar na Competição Brasileira de Robótica',
+    title: 'Equipe da UFSM, em parceria com a FURG, participa de torneio mundial de robótica na Tailândia',
     source: 'UFSM',
-    date: '27/11/2025',
-    url: 'https://www.ufsm.br/2025/11/27/equipe-taura-bots-conquista-3o-lugar-na-competicao-brasileira-de-robotica',
+    date: '05/07/2022',
+    priority: true,
+    url: 'https://www.ufsm.br/2022/07/05/equipe-da-ufsm-em-parceria-com-a-furg-participa-de-torneio-mundial-de-robotica-na-tailandia',
+  },
+  {
+    title: 'Equipe de robótica da FURG é classificada para o mundial na Tailândia',
+    source: 'FURG',
+    date: '10/06/2022',
+    priority: true,
+    url: 'https://furg.br/noticias/noticias-pesquisa-e-inovacao/equipe-de-robotica-da-furg-e-classificada-para-o-mundial-na-tailandia',
+  },
+  {
+    title: 'Professores e estudantes do CT participam da Jornada Argentina de Robótica em Buenos Aires',
+    source: 'UFSM CT',
+    date: '24/06/2024',
+    priority: true,
+    url: 'https://www.ufsm.br/unidades-universitarias/ct/2024/06/24/professores-e-estudantes-do-ct-participam-da-jornada-argentina-de-robotica-jar-em-buenos-aires',
+  },
+  {
+    title: 'Equipe Taura Bots ministra capacitação na Argentina',
+    source: 'UFSM CT',
+    date: '12/07/2024',
+    priority: true,
+    url: 'https://www.ufsm.br/unidades-universitarias/ct/2024/07/12/equipe-taura-bots-ministra-capacitacao-na-argentina',
+  },
+  {
+    title: 'Robô projetado no CT disputa a RoboCup na Alemanha',
+    source: 'UFSM',
+    date: '01/07/2016',
+    priority: true,
+    url: 'https://www.ufsm.br/2016/07/01/robo-projetado-no-ct-disputa-a-robocup-na-alemanha',
+  },
+  {
+    title: 'Alunos do CT irão à Alemanha em preparação para a RoboCup',
+    source: 'UFSM',
+    date: '23/02/2016',
+    priority: true,
+    url: 'https://www.ufsm.br/2016/02/23/alunos-do-ct-irao-a-alemanha-em-preparacao-para-a-robocup',
+  },
+  {
+    title: 'Equipe do CT fica em terceiro lugar em Olimpíada de robótica no Irã',
+    source: 'UFSM CT',
+    date: '09/03/2018',
+    priority: true,
+    url: 'https://www.ufsm.br/unidades-universitarias/ct/2018/03/09/equipe-do-ct-fica-em-terceiro-lugar-em-olimpiada-de-robotica-no-ira',
+  },
+  {
+    title: 'Equipe Taura Bots conquista terceiro lugar na Competição Brasileira de Robótica 2025',
+    source: 'UFSM CT',
+    date: '31/10/2025',
+    url: 'https://www.ufsm.br/unidades-universitarias/ct/2025/10/31/taura-bots-conquista-o-terceiro-lugar-na-competicao-brasileira-de-robotica-2025',
+  },
+  {
+    title: 'PRE/UFSM: Taura Bots celebra trajetória de inovação e 3º lugar na CBR 2025',
+    source: 'PRE UFSM',
+    date: '18/11/2025',
+    url: 'https://www.ufsm.br/pro-reitorias/pre/2025/11/18/taura-bots-conquista-terceiro-lugar-na-competicao-brasileira-de-robotica-2025-e-celebra-trajetoria-de-inovacao-no-ct-da-ufsm',
   },
   {
     title: 'Equipe Taura Bots, da UFSM, conquista terceiro lugar nacional em competição de robótica',
@@ -49,22 +104,22 @@ const articles = [
     url: 'https://diariosm.com.br/noticias/educacao/equipe-taura-bots-da-ufsm-conquista-terceiro-lugar-nacional-em-competicao-de-robotica.15437835',
   },
   {
+    title: 'Equipe Taura Bots representa a UFSM na Competição Brasileira de Robótica 2024 em Goiânia',
+    source: 'UFSM CT',
+    date: '10/12/2024',
+    url: 'https://www.ufsm.br/unidades-universitarias/ct/2024/12/10/equipe-taura-bots-representa-a-ufsm-na-competicao-brasileira-de-robotica-2024-em-goiania',
+  },
+  {
     title: 'Representantes do grupo Taura Bots do CT-UFSM ministraram palestra no IFFar-Jaguari',
     source: 'UFSM CT',
     date: '26/08/2024',
     url: 'https://www.ufsm.br/unidades-universitarias/ct/2024/08/26/representantes-do-grupo-taura-bots-do-ct-ufsm-ministraram-palestra-no-iffar-jaguari',
   },
   {
-    title: 'Professores e estudantes do CT participam da Jornada Argentina de Robótica em Buenos Aires',
+    title: 'Maria Cup: competição de robótica organizada pela Taura Bots',
     source: 'UFSM CT',
-    date: '24/06/2024',
-    url: 'https://www.ufsm.br/unidades-universitarias/ct/2024/06/24/professores-e-estudantes-do-ct-participam-da-jornada-argentina-de-robotica-jar-em-buenos-aires',
-  },
-  {
-    title: 'Equipe da UFSM, em parceria com a FURG, participa de torneio mundial de robótica na Tailândia',
-    source: 'UFSM',
-    date: '05/07/2022',
-    url: 'https://www.ufsm.br/2022/07/05/equipe-da-ufsm-em-parceria-com-a-furg-participa-de-torneio-mundial-de-robotica-na-tailandia',
+    date: '06/12/2023',
+    url: 'https://www.ufsm.br/unidades-universitarias/ct/2023/12/06/maria-cup',
   },
   {
     title: 'Alunos da UFSM apresentam trabalhos na Conferência Internacional de Robótica Avançada',
@@ -85,10 +140,34 @@ const articles = [
     url: 'https://www.ufsm.br/unidades-universitarias/ct/2018/11/28/equipe-do-taura-bots-e-premiada-durante-robocar-race',
   },
   {
+    title: 'A saga do robô arqueiro',
+    source: 'Revista Arco',
+    date: '2018',
+    url: 'https://www.ufsm.br/midias/arco/a-saga-do-robo-arqueiro',
+  },
+  {
+    title: 'Inteligência artificial para exportação',
+    source: 'Revista Arco',
+    date: '10/05/2017',
+    url: 'https://www.ufsm.br/midias/arco/inteligencia-artificial-para-exportacao',
+  },
+  {
     title: 'Robô projetado na UFSM, da Taura Bots, está na maior competição robótica do mundo',
     source: 'Claudemir Pereira',
     date: '07/2016',
     url: 'https://claudemirpereira.com.br/2016/07/tecnologia-robo-projetado-na-ufsm-da-taura-bots-esta-na-maior-competicao-robotica-do-mundo/',
+  },
+  {
+    title: 'UFSM se destaca em Campeonato Latino-Americano de Robótica',
+    source: 'UFSM CT',
+    date: '05/11/2015',
+    url: 'https://www.ufsm.br/unidades-universitarias/ct/2015/11/05/tauraa',
+  },
+  {
+    title: 'Taura Bots participará da competição latino-americana e brasileira de robótica',
+    source: 'UFSM CT',
+    date: '19/10/2015',
+    url: 'https://www.ufsm.br/unidades-universitarias/ct/2015/10/19/taura-bots-ufsm-participara-de-competicao-latino-americana-e-brasileira-de-robotica-2015',
   },
 ];
 
@@ -112,12 +191,16 @@ export default function Media() {
   const [activeVideoId, setActiveVideoId] = useState(videos[0].id);
   const [titles, setTitles] = useState({});
   const [showAllArticles, setShowAllArticles] = useState(false);
+  const [showAllPriorityArticles, setShowAllPriorityArticles] = useState(false);
 
   const activeVideo = useMemo(
     () => videos.find((video) => video.id === activeVideoId) ?? videos[0],
     [activeVideoId],
   );
   const visibleRegularArticles = showAllArticles ? regularArticles : regularArticles.slice(0, 3);
+  const visiblePriorityArticles = showAllPriorityArticles
+    ? priorityArticles
+    : priorityArticles.slice(0, 4);
   const fallbackTitle = language === 'pt' ? 'Taura Bots em vídeo' : 'Taura Bots video';
   const loadingTitle = language === 'pt' ? 'Carregando título...' : 'Loading title...';
 
@@ -288,7 +371,7 @@ export default function Media() {
           </div>
 
           <div className="grid gap-5 lg:grid-cols-2">
-            {priorityArticles.map((article, index) => (
+            {visiblePriorityArticles.map((article, index) => (
               <Reveal key={article.url} delay={index * 120} direction="up">
                 <a
                   href={article.url}
@@ -312,6 +395,29 @@ export default function Media() {
               </Reveal>
             ))}
           </div>
+
+          {priorityArticles.length > 4 && (
+            <div className="mt-8 flex justify-center">
+              <button
+                type="button"
+                onClick={() => setShowAllPriorityArticles((value) => !value)}
+                className="group inline-flex items-center gap-3 border-2 border-[#fcfcfc] px-6 py-3 font-tech font-bold uppercase tracking-widest transition-all hover:bg-[#fcfcfc] hover:text-[#0a0a0a]"
+              >
+                {showAllPriorityArticles
+                  ? language === 'pt'
+                    ? 'Ver menos destaques'
+                    : 'View fewer highlights'
+                  : language === 'pt'
+                    ? 'Ver mais destaques'
+                    : 'View more highlights'}
+                <ChevronDown
+                  className={`h-5 w-5 transition-transform ${
+                    showAllPriorityArticles ? 'rotate-180' : 'group-hover:translate-y-1'
+                  }`}
+                />
+              </button>
+            </div>
+          )}
 
           <div className="mt-5 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
             {visibleRegularArticles.map((article, index) => (
