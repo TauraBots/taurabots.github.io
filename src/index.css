@@ -95,3 +95,19 @@
 .animate-spin-slow {
   animation: spin-slow 15s linear infinite;
 }
+
+@keyframes loader-pulse {
+  0%,
+  100% {
+    opacity: 0.78;
+    transform: scale(0.96);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.08);
+  }
+}
+
+.animate-loader-pulse {
+  animation: loader-pulse 1.15s ease-in-out infinite;
+}

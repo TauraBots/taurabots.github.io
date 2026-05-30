@@ -1,6 +1,9 @@
 import { Github, Instagram, Mail } from 'lucide-react';
+import { useLanguage } from '../../i18n';
 
 export default function Footer() {
+  const { language } = useLanguage();
+
   return (
     <footer id="contato" className="border-t-4 border-[#0a0a0a] bg-[#fcfcfc] pb-8 pt-16">
       <div className="mx-auto max-w-7xl px-6 lg:px-12">
@@ -39,7 +42,10 @@ export default function Footer() {
         </div>
 
         <div className="flex flex-col items-center justify-between border-t border-[#e5e5e5] pt-8 text-center font-mono text-xs uppercase text-[#888888] md:flex-row md:text-left">
-          <p>&copy; {new Date().getFullYear()} Taura Bots. Todos os direitos reservados.</p>
+          <p>
+            &copy; {new Date().getFullYear()} Taura Bots.{' '}
+            {language === 'pt' ? 'Todos os direitos reservados.' : 'All rights reserved.'}
+          </p>
           <p className="mt-2 md:mt-0">Santa Maria, RS - Brasil</p>
         </div>
       </div>

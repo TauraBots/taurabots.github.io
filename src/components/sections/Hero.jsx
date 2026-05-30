@@ -1,7 +1,10 @@
 import { ArrowDownCircle } from 'lucide-react';
 import Reveal from '../Reveal';
+import { useLanguage } from '../../i18n';
 
 export default function Hero() {
+  const { language } = useLanguage();
+
   return (
     <header
       id="hero"
@@ -24,7 +27,7 @@ export default function Hero() {
       <div className="relative z-10 mx-auto w-full max-w-7xl px-6 text-center lg:px-12">
         <Reveal delay={100}>
           <p className="mb-4 font-tech text-xl font-bold uppercase tracking-widest text-[#888888] md:text-2xl">
-            Conheça a equipe
+            {language === 'pt' ? 'Conheça a equipe' : 'Meet the team'}
           </p>
         </Reveal>
 
@@ -47,7 +50,7 @@ export default function Hero() {
       </div>
 
       <div className="absolute left-6 top-1/2 hidden -translate-y-1/2 -rotate-90 font-mono text-xs tracking-widest text-[#888888] lg:block">
-        EST. 2013 — UFSM
+        EST. 2013 - UFSM
       </div>
       <div className="absolute bottom-12 right-6 hidden font-mono text-xs tracking-widest text-[#888888] lg:block">
         DESIGN: @TAURABOTS

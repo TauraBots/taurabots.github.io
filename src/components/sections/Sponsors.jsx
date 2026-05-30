@@ -1,40 +1,43 @@
 import { Plus } from 'lucide-react';
 import Reveal from '../Reveal';
+import { useLanguage } from '../../i18n';
 
 const sponsors = [
   {
     name: 'Allegro MicroSystems',
-    logo: '/assets/Allegro_MicroSystems_logo.svg',
+    logo: '/assets/Sponsor/Allegro_MicroSystems_logo.svg',
     delay: 100,
   },
   {
     name: 'SolidWorks',
-    logo: '/assets/SolidWorks_Logo.svg.png',
+    logo: '/assets/Sponsor/SolidWorks_Logo.svg.png',
     delay: 200,
   },
   {
     name: 'NVIDIA',
-    logo: '/assets/NVIDIA_logo.svg.png',
+    logo: '/assets/Sponsor/NVIDIA_logo.svg.png',
     delay: 300,
   },
   {
     name: 'Altium',
-    logo: '/assets/altium-logo.png',
+    logo: '/assets/Sponsor/altium-logo.png',
     delay: 400,
   },
   {
     name: 'JLCPCB',
-    logo: '/assets/jlcpcb.svg',
+    logo: '/assets/Sponsor/jlcpcb.svg',
     delay: 500,
   },
   {
     name: 'EasyEDA',
-    logo: '/assets/EasyEDA_logo.svg.png',
+    logo: '/assets/Sponsor/EasyEDA_logo.svg.png',
     delay: 600,
   },
 ];
 
 export default function Sponsors() {
+  const { language } = useLanguage();
+
   return (
     <section id="patrocinadores" className="overflow-hidden bg-[#fcfcfc] py-24">
       <div className="mx-auto max-w-7xl px-6 lg:px-12">
@@ -52,7 +55,7 @@ export default function Sponsors() {
                   transform: 'rotate(180deg)',
                 }}
               >
-                PATROCINADOR
+                {language === 'pt' ? 'PATROCINADOR' : 'SPONSOR'}
               </h2>
             </Reveal>
           </div>
@@ -82,9 +85,9 @@ export default function Sponsors() {
               >
                 <Plus className="mb-4 h-12 w-12 transition-transform duration-300 group-hover:rotate-90" />
                 <h3 className="font-tech font-bold uppercase tracking-wider">
-                  Seja um
+                  {language === 'pt' ? 'Seja um' : 'Become a'}
                   <br />
-                  Patrocinador
+                  {language === 'pt' ? 'Patrocinador' : 'Sponsor'}
                 </h3>
               </a>
             </Reveal>
