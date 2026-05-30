@@ -22,6 +22,16 @@ const sponsors = [
     logo: '/assets/altium-logo.png',
     delay: 400,
   },
+  {
+    name: 'JLCPCB',
+    logo: '/assets/jlcpcb.svg',
+    delay: 500,
+  },
+  {
+    name: 'EasyEDA',
+    logo: '/assets/EasyEDA_logo.svg.png',
+    delay: 600,
+  },
 ];
 
 export default function Sponsors() {
@@ -65,7 +75,7 @@ export default function Sponsors() {
               </Reveal>
             ))}
 
-            <Reveal delay={500}>
+            <Reveal delay={700}>
               <a
                 href="#contato"
                 className="group flex aspect-square flex-col items-center justify-center bg-[#e5e5e5] p-12 text-center transition-all duration-300 hover:-translate-y-2 hover:bg-[#888888] hover:text-[#fcfcfc]"
