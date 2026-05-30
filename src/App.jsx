@@ -247,10 +247,10 @@ export default function App() {
         <>
           <Hero />
           <About onNavigate={navigate} />
+          <Sponsors />
           <Team />
           <Projects onNavigate={navigate} />
           <Media />
-          <Sponsors />
           <Talents />
           <Footer />
         </>
