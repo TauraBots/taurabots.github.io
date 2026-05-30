@@ -1,4 +1,4 @@
-import { Github, Instagram, Mail } from 'lucide-react';
+import { Facebook, Github, Instagram, Mail } from 'lucide-react';
 import { useLanguage } from '../../i18n';
 
 export default function Footer() {
@@ -17,10 +17,20 @@ export default function Footer() {
 
           <div className="flex gap-6">
             <a
+              href="https://www.facebook.com/Taurabots"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex h-12 w-12 items-center justify-center rounded-full bg-[#0a0a0a] text-[#fcfcfc] transition-transform hover:-translate-y-2"
+              aria-label="Facebook"
+            >
+              <Facebook className="h-6 w-6" />
+            </a>
+            <a
               href="https://www.instagram.com/taurabots/"
               target="_blank"
               rel="noopener noreferrer"
               className="flex h-12 w-12 items-center justify-center rounded-full bg-[#0a0a0a] text-[#fcfcfc] transition-transform hover:-translate-y-2"
+              aria-label="Instagram"
             >
               <Instagram className="h-6 w-6" />
             </a>
@@ -29,12 +39,14 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               className="flex h-12 w-12 items-center justify-center rounded-full bg-[#0a0a0a] text-[#fcfcfc] transition-transform hover:-translate-y-2"
+              aria-label="GitHub"
             >
               <Github className="h-6 w-6" />
             </a>
             <a
               href="mailto:taurabots@ufsm.br"
               className="flex h-12 w-12 items-center justify-center rounded-full bg-[#0a0a0a] text-[#fcfcfc] transition-transform hover:-translate-y-2"
+              aria-label="Email"
             >
               <Mail className="h-6 w-6" />
             </a>
